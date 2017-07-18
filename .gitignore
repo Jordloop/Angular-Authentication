@@ -40,5 +40,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
+# Firebase
 /src/app/api-keys.ts
+
+# dependencies
+/node_modules
+/bower_components
