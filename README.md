@@ -13,4 +13,7 @@
 <pre>      "styles": [
         "styles.css",
         "../bower_components/bootstrap/dist/css/bootstrap.css"</pre>
+<pre>ng g component public</pre>
+<pre>ng g component private</pre>
+<pre>ng g service auth-guard.service</pre>
 <pre></pre>
