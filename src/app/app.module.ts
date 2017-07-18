@@ -3,12 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
-
-import { AppComponent } from './app.component';
+// authentication
+import { AuthGuardService } from './auth-guard.service';
+import { AuthenticationService } from './authentication.service';
+// firebase
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { masterFirebaseConfig } from './api-keys';
+// components
+import { AppComponent } from './app.component';
 import { PrivateComponent } from './private/private.component';
 import { PublicComponent } from './public/public.component';
 
@@ -35,7 +39,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [AuthGuardService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@ import { PublicComponent } from './public/public.component'
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'public',
     component: PublicComponent
   },
   {
